@@ -1,0 +1,46 @@
+.banner-center
+  %img{src: 'broken_display.jpg'}
+  %h1.pink
+    = t('banners.center.header1')
+  %h2
+    = t('banners.center.header2')
+  %h3
+    %a{href: '/', class: 'button'}
+      = t('banners.center.header3')
+  .legend
+    %span
+      = t(:title)
+    %p.clearfix
+      = t('banners.center.legend')
+.banner-bottom
+  .col1
+    %img{src: '/banner1.png'}
+    .content
+      %h1.pink
+        = t('banners.bottom.col1.header1')
+      %h2
+        = t('banners.bottom.col1.header2')
+      %h3
+        %a{href: '/', class: 'button'}
+          = t('banners.bottom.col1.header3')
+  .col2
+    %img{src: '/banner2.png'}
+    .content
+      %h1.pink
+        = t('banners.bottom.col2.header1')
+      %h2
+        = t('banners.bottom.col2.header2')
+      %h3
+        %a{href: '/', class: 'button'}
+          = t('banners.bottom.col2.header3')
+  .col3
+    %img{src: '/banner3.jpg'}
+    .content
+      %h1.pink
+        = t('banners.bottom.col3.header1')
+      %h2
+        = t('banners.bottom.col3.header2')
+      %h3
+        %a{href: '/', class: 'button'}
+          = t('banners.bottom.col3.header3')
+  

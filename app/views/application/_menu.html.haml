@@ -1,0 +1,23 @@
+.topmenu.clearfix
+  %ul{class: ['dropdown', 'inner', 'clearfix', 'gradient']}
+    %li{class: ['menu-level-0', 'first']}
+      = nav_link_to t(:_home), 'static_pages', 'home'
+    %li{class: ['menu-level-0', 'parent']}
+      = nav_link_to t(:_accessories), 'static_pages', 'accessories'
+    %li{class: ['menu-level-0', 'parent']}
+      = nav_link_to t(:_about), 'static_pages', 'about'
+    - if current_user
+      %li{class: ['menu-level-0']}
+        %a{href: '/users/sign_out', class: 'gradient'}
+          = t('layouts.header.logout')
+    - else
+      %li{class: ['menu-level-0', 'hidden']}
+        %a{href: '/users/sign_up', class: 'gradient'}
+          %span 
+            = t('registrations.new.sign_up')
+      %li{class: ['menu-level-0', 'hidden']}
+        %a{href: '/users/sign_in', class: 'gradient'}
+          %span 
+            = t('layouts.header.login')
+    %li{class: ['menu-level-0', 'last']}
+      = nav_link_to t(:_contacts), 'static_pages', 'contacts'

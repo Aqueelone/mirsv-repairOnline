@@ -1,0 +1,354 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.clearfix{
+    clear: both;
+}
+.vk, .fb {
+    padding: 10px;
+    margin: 0px;
+    position: absolute;
+    display: block;
+    z-index: 100;
+    top: 80px;
+}
+.vk img, .fb img {
+    box-shadow: 1px 1px 3px #2A5A91;
+}
+.vk{
+right: 80px;
+}
+.fb{
+right: 120px;
+}
+.navbar-brand, .navbar-header {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+.topmenu {
+    border-radius: 10px;
+    background: transparent url('shiny1button_bg.png') center center repeat-x;
+    margin: auto;
+    text-align: center;
+    border: gray solid 1px;
+    border: gray solid 1px;
+    box-shadow: 1px 1px 2px gray;
+    font: normal normal normal 14px/1.4em 'Open Sans',sans-serif;
+    display: inline-block;
+}
+.dropdown  > li {
+    float: left;
+    position: relative;
+    border-right: none;
+}
+.dropdown > li a {
+    display: inline-block;
+    color: #000;
+    text-transform: uppercase;
+    text-shadow: none;
+    padding: 10px 25px;
+    font: normal normal normal 14px/1.4em 'Open Sans',sans-serif;
+}
+.dropdown > li a.active, .dropdown > li a:hover, .container .banner-center .button {
+    color: #fff;
+    background: rgba(211, 2, 148, 1) url('shiny1button_bg.png') 70%;
+    transition: background-color 0.4s ease 0s;
+}
+.container .banner-center .button:hover {
+    background: rgba(211, 80, 148, 1) url('shiny1button_bg.png') 70%;
+    transition: background-color 0.4s ease 0s;
+}
+.dropdown > li.first a.active, .dropdown > li.first a:hover  {
+    border-bottom-left-radius: 9px;
+    border-top-left-radius: 9px;
+}
+.dropdown > li.last a.active, .dropdown > li.last a:hover {
+    border-bottom-right-radius: 9px;
+    border-top-right-radius: 9px;
+}
+.pink, .pink span{
+    color: rgba(211, 2, 148, 1);
+}
+.container {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+}
+.container .banner-center {
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0px 2px 2px gray;
+    width: 940px;
+}
+.container .banner-center img{
+    border-radius: 10px;
+    border: whitesmoke solid 4px;
+}
+.container .banner-center h1{
+    text-transform: uppercase;
+    text-shadow: none;
+    font: normal normal normal 30px/1.2em 'Open Sans',sans-serif;
+    position: relative;
+    float: left;
+    padding: 20px;
+    margin: -380px 0px 0px 0px;
+    font-weight: bold;
+}
+.container .banner-center h2{
+    text-align: right;
+    max-width: 300px;
+    text-transform: uppercase;
+    text-shadow: none;
+    font: normal normal normal 18px/1.2em 'Open Sans',sans-serif;
+    position: relative;
+    float: left;
+    padding: 20px;
+    color: black;
+    margin: -200px 0px 0px 140px;
+}
+.container .banner-center h3{
+    float: left;
+    margin: -40px 0px 0px 0px;
+    z-index: 1000;
+    display: block;
+    position: relative;
+    left: 200px;
+    bottom: 50px;
+}
+.container .banner-center button {
+    float: left;
+    margin: -50px 0px 0px 200px;
+}
+.container .banner-center .button, .banner-bottom .content h3  > a {
+    border-radius: 9px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 1px #000;
+    font: normal normal normal 16px/1.2em 'Open Sans',sans-serif;
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px gray, 0px 0px 3px #000;
+}
+.container .banner-center .legend{
+    position: relative;
+    float: left;
+    color: black;
+    font: normal normal normal 17px/1em 'Open Sans',sans-serif;
+    margin: -40px 0px 0px 0px;
+    background-color: white;
+    width: 940px;
+    text-align: left;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+}
+.container .banner-center:hover .legend{
+    display: block;
+}
+.container .banner-center .legend span{
+    font-weight: bolder;
+    padding: 0px 0px 0px 30px;
+}
+.container .banner-center .legend p{
+    padding: 0px 0px 0px 30px;
+    color: black;
+    text-shadow: none;
+}
+.add-comment{
+    display: inline-block;
+}
+.add-comment-velvet.add-comment {
+    background: none;
+    border-top: none;
+    border-left: none;
+    border: gray solid 1px;
+    box-shadow: 0px 2px 4px gray;
+    color: #C5018A;
+    font: normal normal normal 12px/1.4em 'Open Sans',sans-serif;
+    text-shadow: none;
+ }
+.add-comment .actions, .banner-bottom .content h3  > a{
+    margin: 0px 30px 0px 30px;
+    border: 1px;
+    background: rgba(211, 2, 148, 1) url('shiny1button_bg.png') 70%;
+    transition: background-color 0.4s ease 0s;
+}
+ .add-comment .actions:hover, .banner-bottom .content h3  > a.hover {
+    margin: 0px 30px 0px 30px;
+    border: 1px;
+    background: rgba(211, 80, 148, 1) url('shiny1button_bg.png') 70%;
+    transition: background-color 0.4s ease 0s;
+ }
+.btn.btn-send span, .btn.btn-send input {
+    margin: -12px 0px 0px 10px;
+    font: normal normal normal 14px/1.4em 'Open Sans',sans-serif;
+    text-shadow: 1px 1px 1px black;
+    background: rgba(211, 2, 148, 1) url('shiny1button_bg.png') 70%;
+    transition: background-color 0.4s ease 0s;
+    padding: 0px 20px 0px 0px;
+    border-right: rgba(211, 2, 148, 1) solid 1px;
+    color: white;
+}
+.add-comment.add-comment-velvet.styled .rowSubmit{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: transparent url('shiny1button_bg.png') center center repeat-x;
+    border-top: gray solid 1px;
+}
+.add-comment.styled label{
+    color: #C5018A;
+    text-align: left;
+    margin: 10px 0px 0px -15px;
+}
+.rowSubmit .left a{
+    color: #C5018A;
+}
+.rowCheckbox {
+    margin: -15px 0px 0px 90px;
+    padding: 0px 0px 20px 0px;
+}
+.alert {
+    padding: 10px;
+    border-radius: 4px;
+    width: 400px;
+    margin: -140px 0px 0px 250px;
+    font: normal normal normal 14px/1.4em 'Open Sans',sans-serif;
+    position: absolute;
+    left: 200px;
+    font-weight: bold;
+}
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    height: 39px;
+    margin: 0;
+    outline: none;
+    font-size: 14px;
+    color: #C8018C;
+    border: gray solid 1px;
+}
+.banner-bottom{
+    display: inline-block;
+    width: 940px;
+    padding: 30px 0px;
+}
+.banner-bottom .col1,.banner-bottom .col2,.banner-bottom .col3{
+    width: 300px;
+    max-height: 90px;
+    position: relative;
+    left: 0px;
+}
+.banner-bottom img{
+    padding: 10px 0px;
+}
+.banner-bottom .col2{
+    left: 340px;
+    top: -90px;
+}
+.banner-bottom .col3{
+    left: 680px;
+    top: -197px;
+}
+.banner-bottom .content{
+    background: url('back.png') no-repeat 0px 0px;
+    width: 350px;
+    height: 260px;    
+    border-radius: 10px;
+}
+.banner-bottom .content h1{
+    text-transform: uppercase;
+    text-shadow: 0px 0px 1px black;
+    text-align: left;
+    font: normal normal normal 20px/1.2em 'Open Sans',sans-serif;
+    position: relative;
+    padding: 0px 20px;
+    width: 350px;
+    height: 60px;
+}
+.banner-bottom .content h2{
+    text-shadow: 0px 0px 1px black;
+    text-align: left;
+    font: normal normal normal 13px/1.2em 'Open Sans',sans-serif;
+    position: relative;
+    padding: 0px 20px;
+    width: 330px;
+    height: 50px;
+}
+.banner-bottom .content h3{
+    position: relative;
+    left: -20px;
+    top: 60px;
+}
+.banner-bottom .content h3 > a {
+    color: white;
+    box-shadow: 1px 1px 5px white;
+}
+.banner-bottom .content h3 > a:hover {
+    color: white;
+    box-shadow: 0px 0px 3px white;
+    background: rgba(211, 80, 148, 1) url('shiny1button_bg.png') 70%;
+    transition: background-color 0.4s ease 0s;
+}
+footer {
+    margin: auto;
+    width: 90%;
+    text-align: center; 
+}
+footer section {
+    padding-top: 10px;
+    border-top: gray solid 1px;
+    margin: 20px;
+}
+footer .copyright{
+float: right;
+}
+footer .copyright p {
+    font: normal normal normal 14px/1.4em 'Open Sans',sans-serif;
+    color: black;
+    text-shadow: none;
+}
+footer .topmenu {
+    float: left;
+    border-radius: 0px;
+    background: none;
+    margin: -30px auto;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+    font: normal normal normal 14px/1.4em 'Open Sans',sans-serif;
+    display: inline-block;
+}
+footer .topmenu li {
+    border-left: none;
+}
+footer .topmenu li a{
+    padding: 10px;
+}
+footer .topmenu .dropdown > li a.active, footer .dropdown > li a:hover {
+    color: rgba(211, 2, 148, 1);
+    padding: 10px;
+    background: none;
+    transition: background-color 0.4s ease 0s;
+    border: none;
+    transition: background-color 0.4s ease 0s;
+    text-shadow: none;
+}

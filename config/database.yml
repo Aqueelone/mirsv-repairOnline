@@ -1,0 +1,29 @@
+development:
+  adapter: postgresql
+  database: mirsvrepairDev
+  encoding: unicode
+  pool: 16
+  username: su
+  password: su
+  host: localhost
+
+test: &TEST
+  adapter: postgresql
+  database: mirsvrepairTest
+  encoding: unicode
+  pool: 16
+  username: su
+  password: su
+  host: localhost
+
+production:
+  adapter: postgresql
+  database: mirsvrepair
+  pool: 16
+  encoding: su
+  username: su
+  password: su
+  host: localhost
+
+cucumber:
+  <<: *TEST
